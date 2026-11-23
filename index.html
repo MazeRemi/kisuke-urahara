@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kisuke Urahara | Arquivo Confidencial - Bleach</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Fontes temáticas do Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -28,7 +27,7 @@
         </nav>
     </header>
 
-    <!-- Seção Principal (Hero) -->
+    <!-- Seção Principal (Hero) com Imagem de Fundo -->
     <section class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
@@ -45,7 +44,7 @@
     <!-- Conteúdo Principal -->
     <main class="container">
 
-        <!-- Seção 1: Biografia e Ficha Técnica -->
+        <!-- Seção 1: Biografia e Ficha Técnica com Imagem -->
         <section id="sobre" class="section">
             <h2 class="section-title">01. Perfil e História</h2>
             <div class="bio-grid">
@@ -55,26 +54,29 @@
                     <p>Ele foi o responsável por despertar os poderes de Shinigami de Ichigo Kurosaki e prepará-lo para suas maiores batalhas.</p>
                 </div>
 
-                <!-- Card de Ficha Técnica -->
+                <!-- Card de Ficha Técnica com Imagem -->
                 <aside class="info-card">
+                    <div class="profile-img-wrapper">
+                        <img src="https://i.redd.it/2p05q0ze13qc1.jpeg" alt="Kisuke Urahara" class="profile-img" referrerpolicy="no-referrer">
+                    </div>
                     <h3>Ficha Técnica</h3>
                     <ul>
                         <li><strong>Raça:</strong> Shinigami</li>
                         <li><strong>Aniversário:</strong> 31 de Dezembro</li>
                         <li><strong>Altura:</strong> 1,83 m</li>
                         <li><strong>Afiliação Atual:</strong> Loja Urahara</li>
-                        <li><strong>Antigo Posto:</strong> Capitão da 12ª Divisão / 3º Oficial da 2ª Divisão</li>
+                        <li><strong>Antigo Posto:</strong> Capitão da 12ª Divisão</li>
                         <li><strong>Zanpakutō:</strong> Benihime (Princesa Carmesim)</li>
-                        <li><strong>Nível de Ameaça:</strong> Potencial de Guerra Especial (Inteligência)</li>
+                        <li><strong>Ameaça:</strong> Potencial de Guerra Especial</li>
                     </ul>
                 </aside>
             </div>
         </section>
 
-        <!-- Seção 2: Zanpakutō (Interativa) -->
+        <!-- Seção 2: Zanpakutō (Com imagem da Bankai) -->
         <section id="zanpakuto" class="section">
             <h2 class="section-title">02. Zanpakutō: Benihime</h2>
-            <p class="section-desc">Alterne entre os estados da espada para visualizar suas capacidades de combate.</p>
+            <p class="section-desc">Alterne entre os estados da espada para visualizar suas capacidades e sua forma Bankai.</p>
             
             <div class="tabs-container">
                 <div class="tab-buttons">
@@ -101,12 +103,20 @@
                 </div>
 
                 <div class="tab-content" id="bankai">
-                    <h3>Kannonbiraki Benihime Aratame</h3>
-                    <p>Manifesta uma figura feminina gigantesca com braços articulados e cabelos trançados. Sua habilidade absoluta permite <strong>reestruturar qualquer coisa que toque</strong> dentro de seu alcance, literalmente "abrindo" e "costurando" a matéria:</p>
-                    <ul class="ability-list">
-                        <li><strong>Reconstrução Física:</strong> Pode curar ferimentos graves (como restaurar olhos destruídos) ou aumentar drasticamente a força física de seus próprios membros.</li>
-                        <li><strong>Manipulação de Ambiente:</strong> Pode abrir passagens em barreiras impenetráveis ou rasgar o corpo dos inimigos como se fossem tecido.</li>
-                    </ul>
+                    <div class="bankai-showcase">
+                        <div class="bankai-img-wrapper">
+                            <img src="https://static.wikia.nocookie.net/bleach/images/8/81/Ep408UraharaBankaiKannonbirakiBenihimeAratame.webp_%28Imagen_WEBP_1144_%C3%97_741_p%C3%ADxeles%29.png/revision/latest/scale-to-width-down/985?cb=20260806093839&path-prefix=pt" alt="Bankai Kannonbiraki Benihime Aratame" class="bankai-img" referrerpolicy="no-referrer">
+                            <span class="img-caption">Manifestação: Kannonbiraki Benihime Aratame</span>
+                        </div>
+                        <div class="bankai-info">
+                            <h3>Kannonbiraki Benihime Aratame</h3>
+                            <p>Manifesta uma figura feminina gigantesca com braços articulados e cabelos trançados. Sua habilidade absoluta permite <strong>reestruturar qualquer coisa que toque</strong> dentro de seu alcance, literalmente "abrindo" e "costurando" a matéria:</p>
+                            <ul class="ability-list">
+                                <li><strong>Reconstrução Física:</strong> Pode curar ferimentos graves (como restaurar olhos destruídos) ou aumentar drasticamente a força física de seus próprios membros.</li>
+                                <li><strong>Manipulação de Ambiente:</strong> Pode abrir passagens em barreiras impenetráveis ou rasgar o corpo dos inimigos como se fossem tecido.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
