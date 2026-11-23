@@ -6,11 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     tabButtons.forEach(button => {
         button.addEventListener('click', () => {
-            // Remove a classe 'active' de todos os botões e conteúdos
             tabButtons.forEach(btn => btn.classList.remove('active'));
             tabContents.forEach(content => content.classList.remove('active'));
 
-            // Adiciona 'active' no botão clicado e no conteúdo correspondente
             button.classList.add('active');
             const targetId = button.getAttribute('data-target');
             document.getElementById(targetId).classList.add('active');
@@ -33,7 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
     newQuoteBtn.addEventListener('click', () => {
         currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
         
-        // Pequeno efeito de transição
         quoteText.style.opacity = 0;
         setTimeout(() => {
             quoteText.textContent = quotes[currentQuoteIndex];
